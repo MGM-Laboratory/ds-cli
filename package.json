@@ -54,10 +54,10 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@clack/prompts": "^0.9.0",
-    "commander": "^12.1.0",
+    "@clack/prompts": "^1.4.0",
+    "commander": "^14.0.3",
     "execa": "^9.5.2",
-    "magicast": "^0.3.5",
+    "magicast": "^0.5.3",
     "picocolors": "^1.1.1",
     "tinyglobby": "^0.2.10"
   },
