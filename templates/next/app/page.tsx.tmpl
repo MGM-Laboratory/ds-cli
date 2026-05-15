@@ -1,0 +1,59 @@
+import { Button, Card, CardHeader, CardTitle, CardDescription, CardContent } from "@labmgm/react";
+
+export default function HomePage() {
+  return (
+    <main className="mx-auto max-w-[1200px] px-6 py-24">
+      <div className="grid gap-8">
+        <header className="grid gap-4">
+          <span className="inline-block text-[12px] font-semibold uppercase tracking-[0.12em] text-[var(--brand-{{leadColor}})]">
+            {{appName}}
+          </span>
+          <h1
+            className="text-[clamp(2.5rem,6vw+1rem,4.5rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-[var(--ink)]"
+            style={{ fontFamily: "var(--font-family-display)" }}
+          >
+            Build the calm internet your team actually wants.
+          </h1>
+          <p className="max-w-[640px] text-[18px] leading-[1.6] text-[var(--ink-2)]">
+            This project ships with the MGM Laboratory Design System pre-wired — tokens, themes,
+            and the React component library are ready to use.
+          </p>
+          <div className="flex gap-3">
+            <Button>Get started</Button>
+            <Button variant="secondary">Read the docs</Button>
+          </div>
+        </header>
+
+        <section className="mt-8 grid gap-4 md:grid-cols-3">
+          <Card>
+            <CardHeader>
+              <CardTitle>Tokens</CardTitle>
+              <CardDescription>One source of truth — every platform.</CardDescription>
+            </CardHeader>
+            <CardContent className="text-[14px] text-[var(--ink-2)]">
+              Primitive, semantic, and themed values from `@labmgm/tokens`.
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Components</CardTitle>
+              <CardDescription>40+ accessible React primitives.</CardDescription>
+            </CardHeader>
+            <CardContent className="text-[14px] text-[var(--ink-2)]">
+              Forms, overlays, navigation, data — `@labmgm/react`.
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Theming</CardTitle>
+              <CardDescription>Light, dark, system. No flash.</CardDescription>
+            </CardHeader>
+            <CardContent className="text-[14px] text-[var(--ink-2)]">
+              SSR-safe inline script in `<head>`; theme persists per user.
+            </CardContent>
+          </Card>
+        </section>
+      </div>
+    </main>
+  );
+}

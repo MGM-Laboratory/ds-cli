@@ -1,0 +1,11 @@
+/* Brand-spec base. Order matters: Tailwind directives first so @layer rules
+   inside @labmgm/styles can be hoisted into the right cascade. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@labmgm/tokens/css";
+@import "@labmgm/tokens/css/light";
+@import "@labmgm/tokens/css/dark";
+@import "@labmgm/styles/reset.css";
+@import "@labmgm/styles/patterns.css";

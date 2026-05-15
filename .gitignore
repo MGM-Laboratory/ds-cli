@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.changeset/.cache
+.env
+.env.*
+!.env.example
+coverage/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+*.tgz
